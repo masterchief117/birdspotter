@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00DF1C81798857D00F04213 /* UIView+UITextFieldFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DF1C71798857D00F04213 /* UIView+UITextFieldFinder.m */; };
+		B00DF1CB17988A2500F04213 /* UITextField+AddObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DF1CA17988A2500F04213 /* UITextField+AddObserver.m */; };
+		B00E091E17A0745600FA2F2E /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B00E091D17A0745600FA2F2E /* earth.jpg */; };
+		B00E092117A0777B00FA2F2E /* BSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E092017A0777B00FA2F2E /* BSMapViewController.m */; };
+		B012D7CA17A07A8600812562 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012D7C917A07A8600812562 /* MapKit.framework */; };
+		B01DCCA517A9B00400CEAD8E /* BSBirdMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01DCCA417A9B00400CEAD8E /* BSBirdMapViewController.m */; };
+		B023034E17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B023034D17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.m */; };
+		B023035117B2DE250083FC24 /* Birds.m in Sources */ = {isa = PBXBuildFile; fileRef = B023035017B2DE250083FC24 /* Birds.m */; };
+		B023035417B2DED70083FC24 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B023035317B2DED70083FC24 /* Bird.m */; };
+		B02B332A1799F56C00E0E3D6 /* BSActivityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02B33291799F56C00E0E3D6 /* BSActivityPickerViewController.m */; };
+		B036074117A6CA7B00AE0C16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B036074017A6CA7B00AE0C16 /* AudioToolbox.framework */; };
+		B048730717BD3385003672AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB8617970462008CF87B /* XCTest.framework */; };
+		B048730817BD3385003672AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6717970462008CF87B /* Foundation.framework */; };
+		B048730917BD3385003672AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6B17970462008CF87B /* UIKit.framework */; };
+		B048731917BD33AB003672AB /* BSStoreInformationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B048731817BD33AB003672AB /* BSStoreInformationTest.m */; };
+		B048731B17BD49E3003672AB /* BSProfileViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B048731A17BD49E3003672AB /* BSProfileViewTests.m */; };
+		B048731D17BD4B6C003672AB /* BSActivityUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B048731C17BD4B6C003672AB /* BSActivityUtilityTests.m */; };
+		B048731F17BD4DCB003672AB /* BSGeoLocationServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B048731E17BD4DCB003672AB /* BSGeoLocationServiceTests.m */; };
+		B048732017BD4F2F003672AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FD90671799B1D9001B4510 /* CoreLocation.framework */; };
+		B048732117BD5EFE003672AB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C980CD17A2ECB70050903A /* FacebookSDK.framework */; };
+		B048732F17BD76E0003672AB /* OCMockRecorder+ExtraMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B048732E17BD76E0003672AB /* OCMockRecorder+ExtraMethods.m */; };
+		B048734517BD821B003672AB /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B048734417BD8205003672AB /* libOCMock.a */; };
+		B053BD7B17A0628200683D4D /* BSStoreBirdInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = B053BD7A17A0628200683D4D /* BSStoreBirdInformation.m */; };
+		B063954A17BADD100039A4F9 /* BirdViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = B063954917BADD100039A4F9 /* BirdViewer.xib */; };
+		B07C951417B2B9E2004C75DE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07C951317B2B9E2004C75DE /* AssetsLibrary.framework */; };
+		B0832E4B1797224400004B8E /* BSBirdSubmissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0832E4A1797224400004B8E /* BSBirdSubmissionViewController.m */; };
+		B0832E4F1797364D00004B8E /* BSDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B0832E4E1797364D00004B8E /* BSDatePicker.m */; };
+		B0832E521797372C00004B8E /* BSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0832E511797372C00004B8E /* BSDatePickerViewController.m */; };
+		B0832E541797444C00004B8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0832E531797444C00004B8E /* CoreData.framework */; };
+		B0832E581797446A00004B8E /* Bird.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0832E561797446A00004B8E /* Bird.xcdatamodeld */; };
+		B0832E5E17974ECA00004B8E /* BSBird.m in Sources */ = {isa = PBXBuildFile; fileRef = B0832E5D17974ECA00004B8E /* BSBird.m */; };
+		B08CD4E617A1ABA800BED320 /* BSNameSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CD4E517A1ABA800BED320 /* BSNameSelectViewController.m */; };
+		B092981F17A96C1F00DE8844 /* hawk.aif in Resources */ = {isa = PBXBuildFile; fileRef = B092981E17A96C1F00DE8844 /* hawk.aif */; };
+		B09A1AB717A1AD9E00132BF6 /* BSSubmissionService.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A1AB617A1AD9E00132BF6 /* BSSubmissionService.m */; };
+		B09A1ABA17A1BF0000132BF6 /* BSDateService.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A1AB917A1BF0000132BF6 /* BSDateService.m */; };
+		B09A1ABD17A1CCEF00132BF6 /* UIViewController+DateProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A1ABC17A1CCEF00132BF6 /* UIViewController+DateProtocol.m */; };
+		B09A1AC017A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A1ABF17A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.m */; };
+		B0AD3BF617A71A630012E65D /* Crapola.aiff in Resources */ = {isa = PBXBuildFile; fileRef = B0AD3BF517A71A630012E65D /* Crapola.aiff */; };
+		B0B3C4FC17BA99B90059BB3F /* BSBirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3C4FB17BA99B90059BB3F /* BSBirdViewController.m */; };
+		B0B3C50017BAC37A0059BB3F /* BSBirdProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3C4FF17BAC37A0059BB3F /* BSBirdProfileView.m */; };
+		B0B456FA17A2D00F002944E5 /* UITextField+TextValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B456F917A2D00F002944E5 /* UITextField+TextValidation.m */; };
+		B0B9B51317BA903700DEB08B /* BSScrollAllBirdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9B51217BA903700DEB08B /* BSScrollAllBirdsViewController.m */; };
+		B0C980CE17A2ECB70050903A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C980CD17A2ECB70050903A /* FacebookSDK.framework */; };
+		B0E8C0CE1797185B0063EBAA /* birdSpotterSubmission.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E8C0CD1797185B0063EBAA /* birdSpotterSubmission.png */; };
+		B0E8C0D11797194A0063EBAA /* BSPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E8C0D01797194A0063EBAA /* BSPictures.m */; };
+		B0E8DB6817970462008CF87B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6717970462008CF87B /* Foundation.framework */; };
+		B0E8DB6A17970462008CF87B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6917970462008CF87B /* CoreGraphics.framework */; };
+		B0E8DB6C17970462008CF87B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6B17970462008CF87B /* UIKit.framework */; };
+		B0E8DB7417970462008CF87B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E8DB7317970462008CF87B /* main.m */; };
+		B0E8DB7817970462008CF87B /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E8DB7717970462008CF87B /* BSAppDelegate.m */; };
+		B0E8DB7E17970462008CF87B /* BSViewMainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E8DB7D17970462008CF87B /* BSViewMainMenuController.m */; };
+		B0E8DB8017970462008CF87B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E8DB7F17970462008CF87B /* Images.xcassets */; };
+		B0E8DB8717970462008CF87B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB8617970462008CF87B /* XCTest.framework */; };
+		B0E8DB8817970462008CF87B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6717970462008CF87B /* Foundation.framework */; };
+		B0E8DB8917970462008CF87B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6B17970462008CF87B /* UIKit.framework */; };
+		B0E8DB9317970462008CF87B /* BirdSpotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E8DB9217970462008CF87B /* BirdSpotterTests.m */; };
+		B0F83EDB17A033BE0055BB75 /* BSActivityUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F83EDA17A033BE0055BB75 /* BSActivityUtility.m */; };
+		B0FD90681799B1D9001B4510 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FD90671799B1D9001B4510 /* CoreLocation.framework */; };
+		B0FD906C1799B2C2001B4510 /* BSGeoLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FD906B1799B2C2001B4510 /* BSGeoLocationService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B048731317BD3385003672AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0E8DB5C17970462008CF87B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0E8DB6317970462008CF87B;
+			remoteInfo = BirdSpotter;
+		};
+		B0E8DB8A17970462008CF87B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0E8DB5C17970462008CF87B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0E8DB6317970462008CF87B;
+			remoteInfo = BirdSpotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B00DF1C61798857D00F04213 /* UIView+UITextFieldFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UITextFieldFinder.h"; sourceTree = "<group>"; };
+		B00DF1C71798857D00F04213 /* UIView+UITextFieldFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UITextFieldFinder.m"; sourceTree = "<group>"; };
+		B00DF1C917988A2500F04213 /* UITextField+AddObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+AddObserver.h"; sourceTree = "<group>"; };
+		B00DF1CA17988A2500F04213 /* UITextField+AddObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+AddObserver.m"; sourceTree = "<group>"; };
+		B00E091D17A0745600FA2F2E /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		B00E091F17A0777B00FA2F2E /* BSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMapViewController.h; sourceTree = "<group>"; };
+		B00E092017A0777B00FA2F2E /* BSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMapViewController.m; sourceTree = "<group>"; };
+		B012D7C917A07A8600812562 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B01DCCA317A9B00400CEAD8E /* BSBirdMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBirdMapViewController.h; sourceTree = "<group>"; };
+		B01DCCA417A9B00400CEAD8E /* BSBirdMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBirdMapViewController.m; sourceTree = "<group>"; };
+		B023034C17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSOtherFoundBirdsViewController.h; sourceTree = "<group>"; };
+		B023034D17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSOtherFoundBirdsViewController.m; sourceTree = "<group>"; };
+		B023034F17B2DE250083FC24 /* Birds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Birds.h; sourceTree = "<group>"; };
+		B023035017B2DE250083FC24 /* Birds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Birds.m; sourceTree = "<group>"; };
+		B023035217B2DED70083FC24 /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		B023035317B2DED70083FC24 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		B02B33281799F56C00E0E3D6 /* BSActivityPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSActivityPickerViewController.h; sourceTree = "<group>"; };
+		B02B33291799F56C00E0E3D6 /* BSActivityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSActivityPickerViewController.m; sourceTree = "<group>"; };
+		B036074017A6CA7B00AE0C16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B036074217A6CA7B00AE0C16 /* BirdSpotter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BirdSpotter.entitlements; sourceTree = "<group>"; };
+		B036074417A6D2C400AE0C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BirdSpotter/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B048730617BD3385003672AB /* BirdSpotter Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BirdSpotter Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B048731817BD33AB003672AB /* BSStoreInformationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoreInformationTest.m; sourceTree = "<group>"; };
+		B048731A17BD49E3003672AB /* BSProfileViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileViewTests.m; sourceTree = "<group>"; };
+		B048731C17BD4B6C003672AB /* BSActivityUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSActivityUtilityTests.m; sourceTree = "<group>"; };
+		B048731E17BD4DCB003672AB /* BSGeoLocationServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGeoLocationServiceTests.m; sourceTree = "<group>"; };
+		B048732D17BD76E0003672AB /* OCMockRecorder+ExtraMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCMockRecorder+ExtraMethods.h"; sourceTree = "<group>"; };
+		B048732E17BD76E0003672AB /* OCMockRecorder+ExtraMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCMockRecorder+ExtraMethods.m"; sourceTree = "<group>"; };
+		B048733D17BD8205003672AB /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		B048733E17BD8205003672AB /* OCMArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		B048733F17BD8205003672AB /* OCMConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		B048734017BD8205003672AB /* OCMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		B048734117BD8205003672AB /* OCMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		B048734217BD8205003672AB /* OCMockRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		B048734417BD8205003672AB /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		B053BD7917A0628200683D4D /* BSStoreBirdInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStoreBirdInformation.h; sourceTree = "<group>"; };
+		B053BD7A17A0628200683D4D /* BSStoreBirdInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoreBirdInformation.m; sourceTree = "<group>"; };
+		B063954917BADD100039A4F9 /* BirdViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirdViewer.xib; sourceTree = "<group>"; };
+		B07C951317B2B9E2004C75DE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B0832E491797224400004B8E /* BSBirdSubmissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBirdSubmissionViewController.h; sourceTree = "<group>"; };
+		B0832E4A1797224400004B8E /* BSBirdSubmissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBirdSubmissionViewController.m; sourceTree = "<group>"; };
+		B0832E4D1797364D00004B8E /* BSDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDatePicker.h; sourceTree = "<group>"; };
+		B0832E4E1797364D00004B8E /* BSDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDatePicker.m; sourceTree = "<group>"; };
+		B0832E501797372C00004B8E /* BSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDatePickerViewController.h; sourceTree = "<group>"; };
+		B0832E511797372C00004B8E /* BSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDatePickerViewController.m; sourceTree = "<group>"; };
+		B0832E531797444C00004B8E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B0832E571797446A00004B8E /* Bird.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bird.xcdatamodel; sourceTree = "<group>"; };
+		B0832E5C17974ECA00004B8E /* BSBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBird.h; sourceTree = "<group>"; };
+		B0832E5D17974ECA00004B8E /* BSBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBird.m; sourceTree = "<group>"; };
+		B08CD4E417A1ABA800BED320 /* BSNameSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNameSelectViewController.h; sourceTree = "<group>"; };
+		B08CD4E517A1ABA800BED320 /* BSNameSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNameSelectViewController.m; sourceTree = "<group>"; };
+		B092981E17A96C1F00DE8844 /* hawk.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = hawk.aif; sourceTree = "<group>"; };
+		B0942F0017BD2B81003B4AE8 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "../../../../Desktop/OCMockito-0.23/OCHamcrest-1.9/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
+		B094E1B817BD294300C31F51 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = "../../../../Desktop/OCMockito-0.23/OCMockitoIOS.framework"; sourceTree = "<group>"; };
+		B09A1AB517A1AD9E00132BF6 /* BSSubmissionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSubmissionService.h; sourceTree = "<group>"; };
+		B09A1AB617A1AD9E00132BF6 /* BSSubmissionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSubmissionService.m; sourceTree = "<group>"; };
+		B09A1AB817A1BF0000132BF6 /* BSDateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDateService.h; sourceTree = "<group>"; };
+		B09A1AB917A1BF0000132BF6 /* BSDateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDateService.m; sourceTree = "<group>"; };
+		B09A1ABB17A1CCEF00132BF6 /* UIViewController+DateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DateProtocol.h"; sourceTree = "<group>"; };
+		B09A1ABC17A1CCEF00132BF6 /* UIViewController+DateProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DateProtocol.m"; sourceTree = "<group>"; };
+		B09A1ABE17A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LatLonPropertiesDelegate.h"; sourceTree = "<group>"; };
+		B09A1ABF17A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LatLonPropertiesDelegate.m"; sourceTree = "<group>"; };
+		B0AD3BF517A71A630012E65D /* Crapola.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = Crapola.aiff; path = ../../../../../Desktop/Yahtzee/Crapola.aiff; sourceTree = "<group>"; };
+		B0B3C4FA17BA99B90059BB3F /* BSBirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBirdViewController.h; sourceTree = "<group>"; };
+		B0B3C4FB17BA99B90059BB3F /* BSBirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBirdViewController.m; sourceTree = "<group>"; };
+		B0B3C4FE17BAC37A0059BB3F /* BSBirdProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBirdProfileView.h; sourceTree = "<group>"; };
+		B0B3C4FF17BAC37A0059BB3F /* BSBirdProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBirdProfileView.m; sourceTree = "<group>"; };
+		B0B456F817A2D00F002944E5 /* UITextField+TextValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TextValidation.h"; sourceTree = "<group>"; };
+		B0B456F917A2D00F002944E5 /* UITextField+TextValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TextValidation.m"; sourceTree = "<group>"; };
+		B0B9B51117BA903700DEB08B /* BSScrollAllBirdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSScrollAllBirdsViewController.h; sourceTree = "<group>"; };
+		B0B9B51217BA903700DEB08B /* BSScrollAllBirdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSScrollAllBirdsViewController.m; sourceTree = "<group>"; };
+		B0C980CD17A2ECB70050903A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		B0E8C0CD1797185B0063EBAA /* birdSpotterSubmission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdSpotterSubmission.png; sourceTree = "<group>"; };
+		B0E8C0CF1797194A0063EBAA /* BSPictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPictures.h; sourceTree = "<group>"; };
+		B0E8C0D01797194A0063EBAA /* BSPictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPictures.m; sourceTree = "<group>"; };
+		B0E8DB6417970462008CF87B /* BirdSpotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdSpotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E8DB6717970462008CF87B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0E8DB6917970462008CF87B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B0E8DB6B17970462008CF87B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0E8DB6F17970462008CF87B /* BirdSpotter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdSpotter-Info.plist"; sourceTree = "<group>"; };
+		B0E8DB7317970462008CF87B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0E8DB7517970462008CF87B /* BirdSpotter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BirdSpotter-Prefix.pch"; sourceTree = "<group>"; };
+		B0E8DB7617970462008CF87B /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		B0E8DB7717970462008CF87B /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		B0E8DB7C17970462008CF87B /* BSViewMainMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSViewMainMenuController.h; sourceTree = "<group>"; };
+		B0E8DB7D17970462008CF87B /* BSViewMainMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSViewMainMenuController.m; sourceTree = "<group>"; };
+		B0E8DB7F17970462008CF87B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B0E8DB8517970462008CF87B /* BirdSpotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdSpotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E8DB8617970462008CF87B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B0E8DB8E17970462008CF87B /* BirdSpotterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdSpotterTests-Info.plist"; sourceTree = "<group>"; };
+		B0E8DB9217970462008CF87B /* BirdSpotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdSpotterTests.m; sourceTree = "<group>"; };
+		B0F446FC17A81DD40019A98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
+		B0F446FE17A81DD40019A98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		B0F83ED917A033BE0055BB75 /* BSActivityUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSActivityUtility.h; sourceTree = "<group>"; };
+		B0F83EDA17A033BE0055BB75 /* BSActivityUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSActivityUtility.m; sourceTree = "<group>"; };
+		B0FD90671799B1D9001B4510 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0FD906A1799B2C2001B4510 /* BSGeoLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGeoLocationService.h; sourceTree = "<group>"; };
+		B0FD906B1799B2C2001B4510 /* BSGeoLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGeoLocationService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B048730317BD3385003672AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B048730717BD3385003672AB /* XCTest.framework in Frameworks */,
+				B048730917BD3385003672AB /* UIKit.framework in Frameworks */,
+				B048730817BD3385003672AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E8DB6117970462008CF87B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07C951417B2B9E2004C75DE /* AssetsLibrary.framework in Frameworks */,
+				B012D7CA17A07A8600812562 /* MapKit.framework in Frameworks */,
+				B0FD90681799B1D9001B4510 /* CoreLocation.framework in Frameworks */,
+				B0832E541797444C00004B8E /* CoreData.framework in Frameworks */,
+				B036074117A6CA7B00AE0C16 /* AudioToolbox.framework in Frameworks */,
+				B0E8DB6A17970462008CF87B /* CoreGraphics.framework in Frameworks */,
+				B0E8DB6C17970462008CF87B /* UIKit.framework in Frameworks */,
+				B0E8DB6817970462008CF87B /* Foundation.framework in Frameworks */,
+				B0C980CE17A2ECB70050903A /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E8DB8217970462008CF87B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B048734517BD821B003672AB /* libOCMock.a in Frameworks */,
+				B048732117BD5EFE003672AB /* FacebookSDK.framework in Frameworks */,
+				B048732017BD4F2F003672AB /* CoreLocation.framework in Frameworks */,
+				B0E8DB8717970462008CF87B /* XCTest.framework in Frameworks */,
+				B0E8DB8917970462008CF87B /* UIKit.framework in Frameworks */,
+				B0E8DB8817970462008CF87B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B009BE6217A317040033F0FB /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		B00DF1C1179883BB00F04213 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B00DF1C61798857D00F04213 /* UIView+UITextFieldFinder.h */,
+				B00DF1C71798857D00F04213 /* UIView+UITextFieldFinder.m */,
+				B00DF1C917988A2500F04213 /* UITextField+AddObserver.h */,
+				B00DF1CA17988A2500F04213 /* UITextField+AddObserver.m */,
+				B09A1ABB17A1CCEF00132BF6 /* UIViewController+DateProtocol.h */,
+				B09A1ABC17A1CCEF00132BF6 /* UIViewController+DateProtocol.m */,
+				B09A1ABE17A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.h */,
+				B09A1ABF17A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.m */,
+				B0B456F817A2D00F002944E5 /* UITextField+TextValidation.h */,
+				B0B456F917A2D00F002944E5 /* UITextField+TextValidation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B00E091B17A0743500FA2F2E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B092981E17A96C1F00DE8844 /* hawk.aif */,
+				B0AD3BF517A71A630012E65D /* Crapola.aiff */,
+				B009BE6217A317040033F0FB /* Base.lproj */,
+				B00E091C17A0743C00FA2F2E /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B00E091C17A0743C00FA2F2E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B00E091D17A0745600FA2F2E /* earth.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B048732217BD71B1003672AB /* ocmock */ = {
+			isa = PBXGroup;
+			children = (
+				B048732C17BD76B6003672AB /* categories */,
+				B048732417BD71C2003672AB /* OCMock */,
+			);
+			name = ocmock;
+			sourceTree = "<group>";
+		};
+		B048732417BD71C2003672AB /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				B048733A17BD8205003672AB /* usr */,
+			);
+			name = OCMock;
+			path = ../../../../../Desktop/iOS/OCMock;
+			sourceTree = "<group>";
+		};
+		B048732C17BD76B6003672AB /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				B048732D17BD76E0003672AB /* OCMockRecorder+ExtraMethods.h */,
+				B048732E17BD76E0003672AB /* OCMockRecorder+ExtraMethods.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		B048733A17BD8205003672AB /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				B048733B17BD8205003672AB /* include */,
+				B048734317BD8205003672AB /* lib */,
+			);
+			name = usr;
+			path = BirdSpotterTests/usr;
+			sourceTree = SOURCE_ROOT;
+		};
+		B048733B17BD8205003672AB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B048733C17BD8205003672AB /* OCMock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B048733C17BD8205003672AB /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				B048733D17BD8205003672AB /* NSNotificationCenter+OCMAdditions.h */,
+				B048733E17BD8205003672AB /* OCMArg.h */,
+				B048733F17BD8205003672AB /* OCMConstraint.h */,
+				B048734017BD8205003672AB /* OCMock.h */,
+				B048734117BD8205003672AB /* OCMockObject.h */,
+				B048734217BD8205003672AB /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		B048734317BD8205003672AB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B048734417BD8205003672AB /* libOCMock.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B0832E481797221D00004B8E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0E8DB7C17970462008CF87B /* BSViewMainMenuController.h */,
+				B0E8DB7D17970462008CF87B /* BSViewMainMenuController.m */,
+				B0832E491797224400004B8E /* BSBirdSubmissionViewController.h */,
+				B0832E4A1797224400004B8E /* BSBirdSubmissionViewController.m */,
+				B0832E501797372C00004B8E /* BSDatePickerViewController.h */,
+				B0832E511797372C00004B8E /* BSDatePickerViewController.m */,
+				B02B33281799F56C00E0E3D6 /* BSActivityPickerViewController.h */,
+				B02B33291799F56C00E0E3D6 /* BSActivityPickerViewController.m */,
+				B00E091F17A0777B00FA2F2E /* BSMapViewController.h */,
+				B00E092017A0777B00FA2F2E /* BSMapViewController.m */,
+				B08CD4E417A1ABA800BED320 /* BSNameSelectViewController.h */,
+				B08CD4E517A1ABA800BED320 /* BSNameSelectViewController.m */,
+				B01DCCA317A9B00400CEAD8E /* BSBirdMapViewController.h */,
+				B01DCCA417A9B00400CEAD8E /* BSBirdMapViewController.m */,
+				B023034C17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.h */,
+				B023034D17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.m */,
+				B0B9B51117BA903700DEB08B /* BSScrollAllBirdsViewController.h */,
+				B0B9B51217BA903700DEB08B /* BSScrollAllBirdsViewController.m */,
+				B0B3C4FA17BA99B90059BB3F /* BSBirdViewController.h */,
+				B0B3C4FB17BA99B90059BB3F /* BSBirdViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B0832E4C1797360E00004B8E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B0832E5C17974ECA00004B8E /* BSBird.h */,
+				B0832E5D17974ECA00004B8E /* BSBird.m */,
+				B0832E4D1797364D00004B8E /* BSDatePicker.h */,
+				B0832E4E1797364D00004B8E /* BSDatePicker.m */,
+				B023034F17B2DE250083FC24 /* Birds.h */,
+				B023035017B2DE250083FC24 /* Birds.m */,
+				B023035217B2DED70083FC24 /* Bird.h */,
+				B023035317B2DED70083FC24 /* Bird.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B0832E551797445700004B8E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B0832E561797446A00004B8E /* Bird.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		B0B3C4FD17BAC35D0059BB3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3C4FE17BAC37A0059BB3F /* BSBirdProfileView.h */,
+				B0B3C4FF17BAC37A0059BB3F /* BSBirdProfileView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B0B9B50C17BA8FAB00DEB08B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				B063954917BADD100039A4F9 /* BirdViewer.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		B0E8DB5B17970462008CF87B = {
+			isa = PBXGroup;
+			children = (
+				B0E8DB6D17970462008CF87B /* BirdSpotter */,
+				B0E8DB8C17970462008CF87B /* BirdSpotterTests */,
+				B0E8DB6617970462008CF87B /* Frameworks */,
+				B0E8DB6517970462008CF87B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0E8DB6517970462008CF87B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0E8DB6417970462008CF87B /* BirdSpotter.app */,
+				B0E8DB8517970462008CF87B /* BirdSpotterTests.xctest */,
+				B048730617BD3385003672AB /* BirdSpotter Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E8DB6617970462008CF87B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0942F0017BD2B81003B4AE8 /* OCHamcrestIOS.framework */,
+				B094E1B817BD294300C31F51 /* OCMockitoIOS.framework */,
+				B07C951317B2B9E2004C75DE /* AssetsLibrary.framework */,
+				B036074017A6CA7B00AE0C16 /* AudioToolbox.framework */,
+				B0C980CD17A2ECB70050903A /* FacebookSDK.framework */,
+				B012D7C917A07A8600812562 /* MapKit.framework */,
+				B0FD90671799B1D9001B4510 /* CoreLocation.framework */,
+				B0832E531797444C00004B8E /* CoreData.framework */,
+				B0E8DB6717970462008CF87B /* Foundation.framework */,
+				B0E8DB6917970462008CF87B /* CoreGraphics.framework */,
+				B0E8DB6B17970462008CF87B /* UIKit.framework */,
+				B0E8DB8617970462008CF87B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0E8DB6D17970462008CF87B /* BirdSpotter */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3C4FD17BAC35D0059BB3F /* Views */,
+				B0B9B50C17BA8FAB00DEB08B /* Xibs */,
+				B0F446F817A81DD40019A98B /* Base.lproj */,
+				B036074317A6D2C400AE0C16 /* Main.storyboard */,
+				B036074217A6CA7B00AE0C16 /* BirdSpotter.entitlements */,
+				B00E091B17A0743500FA2F2E /* Resources */,
+				B0F83ED817A0336B0055BB75 /* Utilities */,
+				B0FD90691799B290001B4510 /* Service */,
+				B00DF1C1179883BB00F04213 /* Categories */,
+				B0832E551797445700004B8E /* CoreData */,
+				B0832E4C1797360E00004B8E /* Entities */,
+				B0832E481797221D00004B8E /* Controllers */,
+				B0E8DB7617970462008CF87B /* BSAppDelegate.h */,
+				B0E8DB7717970462008CF87B /* BSAppDelegate.m */,
+				B0E8C0CD1797185B0063EBAA /* birdSpotterSubmission.png */,
+				B0E8DB7F17970462008CF87B /* Images.xcassets */,
+				B0E8DB6E17970462008CF87B /* Supporting Files */,
+				B0E8C0CF1797194A0063EBAA /* BSPictures.h */,
+				B0E8C0D01797194A0063EBAA /* BSPictures.m */,
+			);
+			path = BirdSpotter;
+			sourceTree = "<group>";
+		};
+		B0E8DB6E17970462008CF87B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0E8DB6F17970462008CF87B /* BirdSpotter-Info.plist */,
+				B0E8DB7517970462008CF87B /* BirdSpotter-Prefix.pch */,
+				B0E8DB7317970462008CF87B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0E8DB8C17970462008CF87B /* BirdSpotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B048732217BD71B1003672AB /* ocmock */,
+				B048731E17BD4DCB003672AB /* BSGeoLocationServiceTests.m */,
+				B048731C17BD4B6C003672AB /* BSActivityUtilityTests.m */,
+				B048731A17BD49E3003672AB /* BSProfileViewTests.m */,
+				B048731817BD33AB003672AB /* BSStoreInformationTest.m */,
+				B0E8DB9217970462008CF87B /* BirdSpotterTests.m */,
+				B0E8DB8D17970462008CF87B /* Supporting Files */,
+			);
+			path = BirdSpotterTests;
+			sourceTree = "<group>";
+		};
+		B0E8DB8D17970462008CF87B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0E8DB8E17970462008CF87B /* BirdSpotterTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0F446F817A81DD40019A98B /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B0F446F917A81DD40019A98B /* Localizable.strings */,
+				B0F446FD17A81DD40019A98B /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		B0F83ED817A0336B0055BB75 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B0F83ED917A033BE0055BB75 /* BSActivityUtility.h */,
+				B0F83EDA17A033BE0055BB75 /* BSActivityUtility.m */,
+				B053BD7917A0628200683D4D /* BSStoreBirdInformation.h */,
+				B053BD7A17A0628200683D4D /* BSStoreBirdInformation.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		B0FD90691799B290001B4510 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD906A1799B2C2001B4510 /* BSGeoLocationService.h */,
+				B0FD906B1799B2C2001B4510 /* BSGeoLocationService.m */,
+				B09A1AB517A1AD9E00132BF6 /* BSSubmissionService.h */,
+				B09A1AB617A1AD9E00132BF6 /* BSSubmissionService.m */,
+				B09A1AB817A1BF0000132BF6 /* BSDateService.h */,
+				B09A1AB917A1BF0000132BF6 /* BSDateService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B048730517BD3385003672AB /* BirdSpotter Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B048731717BD3385003672AB /* Build configuration list for PBXNativeTarget "BirdSpotter Tests" */;
+			buildPhases = (
+				B048730217BD3385003672AB /* Sources */,
+				B048730317BD3385003672AB /* Frameworks */,
+				B048730417BD3385003672AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B048731417BD3385003672AB /* PBXTargetDependency */,
+			);
+			name = "BirdSpotter Tests";
+			productName = "BirdSpotter Tests";
+			productReference = B048730617BD3385003672AB /* BirdSpotter Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0E8DB6317970462008CF87B /* BirdSpotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E8DB9617970462008CF87B /* Build configuration list for PBXNativeTarget "BirdSpotter" */;
+			buildPhases = (
+				B0E8DB6017970462008CF87B /* Sources */,
+				B0E8DB6117970462008CF87B /* Frameworks */,
+				B0E8DB6217970462008CF87B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdSpotter;
+			productName = BirdSpotter;
+			productReference = B0E8DB6417970462008CF87B /* BirdSpotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0E8DB8417970462008CF87B /* BirdSpotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E8DB9917970462008CF87B /* Build configuration list for PBXNativeTarget "BirdSpotterTests" */;
+			buildPhases = (
+				B0E8DB8117970462008CF87B /* Sources */,
+				B0E8DB8217970462008CF87B /* Frameworks */,
+				B0E8DB8317970462008CF87B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0E8DB8B17970462008CF87B /* PBXTargetDependency */,
+			);
+			name = BirdSpotterTests;
+			productName = BirdSpotterTests;
+			productReference = B0E8DB8517970462008CF87B /* BirdSpotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0E8DB5C17970462008CF87B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = masterchief117;
+				TargetAttributes = {
+					B048730517BD3385003672AB = {
+						TestTargetID = B0E8DB6317970462008CF87B;
+					};
+					B0E8DB6317970462008CF87B = {
+						DevelopmentTeam = EP2MUJDXK3;
+					};
+					B0E8DB8417970462008CF87B = {
+						TestTargetID = B0E8DB6317970462008CF87B;
+					};
+				};
+			};
+			buildConfigurationList = B0E8DB5F17970462008CF87B /* Build configuration list for PBXProject "BirdSpotter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = B0E8DB5B17970462008CF87B;
+			productRefGroup = B0E8DB6517970462008CF87B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0E8DB6317970462008CF87B /* BirdSpotter */,
+				B0E8DB8417970462008CF87B /* BirdSpotterTests */,
+				B048730517BD3385003672AB /* BirdSpotter Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B048730417BD3385003672AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E8DB6217970462008CF87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E8DB8017970462008CF87B /* Images.xcassets in Resources */,
+				B092981F17A96C1F00DE8844 /* hawk.aif in Resources */,
+				B0AD3BF617A71A630012E65D /* Crapola.aiff in Resources */,
+				B00E091E17A0745600FA2F2E /* earth.jpg in Resources */,
+				B063954A17BADD100039A4F9 /* BirdViewer.xib in Resources */,
+				B0E8C0CE1797185B0063EBAA /* birdSpotterSubmission.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E8DB8317970462008CF87B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B048730217BD3385003672AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E8DB6017970462008CF87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B9B51317BA903700DEB08B /* BSScrollAllBirdsViewController.m in Sources */,
+				B023035417B2DED70083FC24 /* Bird.m in Sources */,
+				B09A1AC017A1DF8F00132BF6 /* UIViewController+LatLonPropertiesDelegate.m in Sources */,
+				B00DF1C81798857D00F04213 /* UIView+UITextFieldFinder.m in Sources */,
+				B0B456FA17A2D00F002944E5 /* UITextField+TextValidation.m in Sources */,
+				B0832E4B1797224400004B8E /* BSBirdSubmissionViewController.m in Sources */,
+				B02B332A1799F56C00E0E3D6 /* BSActivityPickerViewController.m in Sources */,
+				B0E8DB7E17970462008CF87B /* BSViewMainMenuController.m in Sources */,
+				B0F83EDB17A033BE0055BB75 /* BSActivityUtility.m in Sources */,
+				B09A1ABA17A1BF0000132BF6 /* BSDateService.m in Sources */,
+				B0832E5E17974ECA00004B8E /* BSBird.m in Sources */,
+				B09A1AB717A1AD9E00132BF6 /* BSSubmissionService.m in Sources */,
+				B0B3C50017BAC37A0059BB3F /* BSBirdProfileView.m in Sources */,
+				B0832E4F1797364D00004B8E /* BSDatePicker.m in Sources */,
+				B0FD906C1799B2C2001B4510 /* BSGeoLocationService.m in Sources */,
+				B053BD7B17A0628200683D4D /* BSStoreBirdInformation.m in Sources */,
+				B0832E581797446A00004B8E /* Bird.xcdatamodeld in Sources */,
+				B023034E17B2D53C0083FC24 /* BSOtherFoundBirdsViewController.m in Sources */,
+				B0E8DB7417970462008CF87B /* main.m in Sources */,
+				B023035117B2DE250083FC24 /* Birds.m in Sources */,
+				B01DCCA517A9B00400CEAD8E /* BSBirdMapViewController.m in Sources */,
+				B0E8DB7817970462008CF87B /* BSAppDelegate.m in Sources */,
+				B08CD4E617A1ABA800BED320 /* BSNameSelectViewController.m in Sources */,
+				B09A1ABD17A1CCEF00132BF6 /* UIViewController+DateProtocol.m in Sources */,
+				B0E8C0D11797194A0063EBAA /* BSPictures.m in Sources */,
+				B0832E521797372C00004B8E /* BSDatePickerViewController.m in Sources */,
+				B00E092117A0777B00FA2F2E /* BSMapViewController.m in Sources */,
+				B0B3C4FC17BA99B90059BB3F /* BSBirdViewController.m in Sources */,
+				B00DF1CB17988A2500F04213 /* UITextField+AddObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E8DB8117970462008CF87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B048731D17BD4B6C003672AB /* BSActivityUtilityTests.m in Sources */,
+				B048732F17BD76E0003672AB /* OCMockRecorder+ExtraMethods.m in Sources */,
+				B0E8DB9317970462008CF87B /* BirdSpotterTests.m in Sources */,
+				B048731B17BD49E3003672AB /* BSProfileViewTests.m in Sources */,
+				B048731F17BD4DCB003672AB /* BSGeoLocationServiceTests.m in Sources */,
+				B048731917BD33AB003672AB /* BSStoreInformationTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B048731417BD3385003672AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0E8DB6317970462008CF87B /* BirdSpotter */;
+			targetProxy = B048731317BD3385003672AB /* PBXContainerItemProxy */;
+		};
+		B0E8DB8B17970462008CF87B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0E8DB6317970462008CF87B /* BirdSpotter */;
+			targetProxy = B0E8DB8A17970462008CF87B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B036074317A6D2C400AE0C16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B036074417A6D2C400AE0C16 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B0F446F917A81DD40019A98B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0F446FC17A81DD40019A98B /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B0F446FD17A81DD40019A98B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0F446FE17A81DD40019A98B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B048731517BD3385003672AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BirdSpotter.app/BirdSpotter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdSpotter Tests/BirdSpotter Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BirdSpotter Tests/BirdSpotter Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B048731617BD3385003672AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BirdSpotter.app/BirdSpotter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdSpotter Tests/BirdSpotter Tests-Prefix.pch";
+				INFOPLIST_FILE = "BirdSpotter Tests/BirdSpotter Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		B0E8DB9417970462008CF87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/BirdSpotterTests/usr/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/BirdSpotterTests/usr/lib/libOCMock.a",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "";
+				"VALID_ARCHS[sdk=*]" = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		B0E8DB9517970462008CF87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/BirdSpotterTests/usr/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/BirdSpotterTests/usr/lib/libOCMock.a",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "";
+				"VALID_ARCHS[sdk=*]" = "armv7s armv7";
+			};
+			name = Release;
+		};
+		B0E8DB9717970462008CF87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = BirdSpotter/BirdSpotter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../FacebookSDK",
+					"/Users/bstewart/Desktop/OCMockito-0.23",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdSpotter/BirdSpotter-Prefix.pch";
+				INFOPLIST_FILE = "BirdSpotter/BirdSpotter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0E8DB9817970462008CF87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = BirdSpotter/BirdSpotter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../FacebookSDK",
+					"/Users/bstewart/Desktop/OCMockito-0.23",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdSpotter/BirdSpotter-Prefix.pch";
+				INFOPLIST_FILE = "BirdSpotter/BirdSpotter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B0E8DB9A17970462008CF87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BirdSpotter.app/BirdSpotter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+					"/Users/bstewart/Desktop/OCMockito-0.23",
+					"/Users/bstewart/Desktop/OCMockito-0.23/OCHamcrest-1.9",
+					/Users/bstewart/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdSpotter/BirdSpotter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/BirdSpotterTests/usr/include/";
+				INFOPLIST_FILE = "BirdSpotterTests/BirdSpotterTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/bstewart/Desktop/iOS,
+					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests,
+					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests/usr/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B0E8DB9B17970462008CF87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BirdSpotter.app/BirdSpotter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+					"/Users/bstewart/Desktop/OCMockito-0.23",
+					"/Users/bstewart/Desktop/OCMockito-0.23/OCHamcrest-1.9",
+					/Users/bstewart/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BirdSpotter/BirdSpotter-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/BirdSpotterTests/usr/include/";
+				INFOPLIST_FILE = "BirdSpotterTests/BirdSpotterTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/bstewart/Desktop/iOS,
+					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests,
+					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests/usr/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B048731717BD3385003672AB /* Build configuration list for PBXNativeTarget "BirdSpotter Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B048731517BD3385003672AB /* Debug */,
+				B048731617BD3385003672AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0E8DB5F17970462008CF87B /* Build configuration list for PBXProject "BirdSpotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E8DB9417970462008CF87B /* Debug */,
+				B0E8DB9517970462008CF87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E8DB9617970462008CF87B /* Build configuration list for PBXNativeTarget "BirdSpotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E8DB9717970462008CF87B /* Debug */,
+				B0E8DB9817970462008CF87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E8DB9917970462008CF87B /* Build configuration list for PBXNativeTarget "BirdSpotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E8DB9A17970462008CF87B /* Debug */,
+				B0E8DB9B17970462008CF87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0832E561797446A00004B8E /* Bird.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0832E571797446A00004B8E /* Bird.xcdatamodel */,
+			);
+			currentVersion = B0832E571797446A00004B8E /* Bird.xcdatamodel */;
+			path = Bird.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B0E8DB5C17970462008CF87B /* Project object */;
+}

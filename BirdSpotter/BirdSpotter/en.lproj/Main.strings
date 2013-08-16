@@ -1,0 +1,81 @@
+
+/* Class = "IBUIButton"; normalTitle = "Take Picture"; ObjectID = "0no-v8-hyC"; */
+"0no-v8-hyC.normalTitle" = "Take Picture";
+
+/* Class = "IBUIButton"; normalTitle = "type"; ObjectID = "2Kc-3W-yRg"; */
+"2Kc-3W-yRg.normalTitle" = "type";
+
+/* Class = "IBUIButton"; normalTitle = "Return"; ObjectID = "5g2-um-XuP"; */
+"5g2-um-XuP.normalTitle" = "Return";
+
+/* Class = "IBUIButton"; normalTitle = "Return"; ObjectID = "Ck1-ES-07z"; */
+"Ck1-ES-07z.normalTitle" = "Return";
+
+/* Class = "IBUILabel"; text = "Latitude :"; ObjectID = "FC7-fU-Hcy"; */
+"FC7-fU-Hcy.text" = "Latitude :";
+
+/* Class = "IBUIButton"; normalTitle = "Found New Bird"; ObjectID = "GKm-3H-PO7"; */
+"GKm-3H-PO7.normalTitle" = "Found New Bird";
+
+/* Class = "IBUIButton"; normalTitle = "Return"; ObjectID = "HaW-Xt-zMS"; */
+"HaW-Xt-zMS.normalTitle" = "Return";
+
+/* Class = "IBUIButton"; normalTitle = "Return"; ObjectID = "Jfi-c0-1FB"; */
+"Jfi-c0-1FB.normalTitle" = "Return";
+
+/* Class = "IBUIButton"; normalTitle = "Submit"; ObjectID = "Mfh-vu-cX2"; */
+"Mfh-vu-cX2.normalTitle" = "Submit";
+
+/* Class = "IBUIButton"; normalTitle = "todaysDate"; ObjectID = "RKr-Tv-6mH"; */
+"RKr-Tv-6mH.normalTitle" = "todaysDate";
+
+/* Class = "IBUIButton"; normalTitle = "end_date"; ObjectID = "Rac-PB-11D"; */
+"Rac-PB-11D.normalTitle" = "end_date";
+
+/* Class = "IBUILabel"; text = "Bird"; ObjectID = "Sc3-bZ-RfS"; */
+"Sc3-bZ-RfS.text" = "Bird";
+
+/* Class = "IBUILabel"; text = "Longitude :"; ObjectID = "VRv-f6-9hx"; */
+"VRv-f6-9hx.text" = "Longitude :";
+
+/* Class = "IBUILabel"; text = "Date :"; ObjectID = "VtV-HL-h9L"; */
+"VtV-HL-h9L.text" = "Date :";
+
+/* Class = "IBUILabel"; text = "Photo :"; ObjectID = "WoT-KT-UnW"; */
+"WoT-KT-UnW.text" = "Photo :";
+
+/* Class = "IBUILabel"; text = "GeoLocation"; ObjectID = "Z03-17-V01"; */
+"Z03-17-V01.text" = "GeoLocation";
+
+/* Class = "IBUIButton"; normalTitle = "RETURN"; ObjectID = "fKK-0b-u2J"; */
+"fKK-0b-u2J.normalTitle" = "RETURN";
+
+/* Class = "IBUILabel"; text = "Bird Spotter"; ObjectID = "fw6-Zl-kQH"; */
+"fw6-Zl-kQH.text" = "Bird Spotter";
+
+/* Class = "IBUIButton"; normalTitle = "Exisiting Photo"; ObjectID = "gwL-Wq-2aX"; */
+"gwL-Wq-2aX.normalTitle" = "Exisiting Photo";
+
+/* Class = "IBUILabel"; accessibilityLabel = "0"; ObjectID = "h4x-zx-xti"; */
+"h4x-zx-xti.accessibilityLabel" = "0";
+
+/* Class = "IBUIButton"; normalTitle = "Map Of Birds"; ObjectID = "n3W-tD-BTz"; */
+"n3W-tD-BTz.normalTitle" = "Map Of Birds";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "npx-Ze-90u"; */
+"npx-Ze-90u.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Activity :"; ObjectID = "oE7-Zw-9vz"; */
+"oE7-Zw-9vz.text" = "Activity :";
+
+/* Class = "IBUIButton"; normalTitle = "Records"; ObjectID = "q3z-0m-yaW"; */
+"q3z-0m-yaW.normalTitle" = "Records";
+
+/* Class = "IBUILabel"; text = "Name :"; ObjectID = "qCm-j7-6bK"; */
+"qCm-j7-6bK.text" = "Name :";
+
+/* Class = "IBUIButton"; normalTitle = "start_date"; ObjectID = "sKD-Lh-y7e"; */
+"sKD-Lh-y7e.normalTitle" = "start_date";
+
+/* Class = "IBUIButton"; normalTitle = "Return"; ObjectID = "uRB-9Y-xyW"; */
+"uRB-9Y-xyW.normalTitle" = "Return";
