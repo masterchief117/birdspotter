@@ -67,11 +67,11 @@ static BSGeoLocationService* _me;
 }
 
 - (MKPointAnnotation*)locatedPosition:(UILongPressGestureRecognizer *)sender map : (MKMapView*) map removeAnnotations : (bool) remove{
-    MKPointAnnotation* point;
-    point = [[MKPointAnnotation alloc] init];
+
+    MKPointAnnotation* point = [[MKPointAnnotation alloc] init];
     
-    CLLocationCoordinate2D me = [map convertPoint:[sender locationInView:map] toCoordinateFromView:map];
-    point.coordinate = me;
+;
+    [point setCoordinate:[map convertPoint:[sender locationInView:map] toCoordinateFromView:map]];
     [map addAnnotation:point];
     [BSStoreBirdInformation addObjectsToUserDefault:[[NSDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithFloat:point.coordinate.latitude], @"latitude", [NSNumber numberWithFloat:point.coordinate.longitude], @"longitude",nil]];
     if(remove){

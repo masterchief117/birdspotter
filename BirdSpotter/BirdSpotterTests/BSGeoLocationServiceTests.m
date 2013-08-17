@@ -33,12 +33,17 @@ BSGeoLocationService* geoLocationService;
 id mapMock;
 id userLocationMock;
 id cllLocationMock;
+id longPressGestureRecognizerMock;
 
 CLLocationCoordinate2D locationCoordinates;
 MKCoordinateRegion coordinateRegion;
 NSArray* array;
 NSError* error;
 MKMapType hybridMap = MKMapTypeHybrid;
+CGPoint point;
+
+
+
 id<LatLonPropertiesDelegate> viewOfLatAndLonProperties;
 
 - (void)setUp
@@ -54,13 +59,15 @@ id<LatLonPropertiesDelegate> viewOfLatAndLonProperties;
     mapMock = [OCMockObject mockForClass:[MKMapView class]];
     userLocationMock = [OCMockObject mockForClass:[MKUserLocation class]];
     cllLocationMock = [OCMockObject mockForClass:[CLLocation class]];
+    longPressGestureRecognizerMock = [OCMockObject mockForClass:[UILongPressGestureRecognizer class]];
     
     // protocol mocks
     geoLocationService.delegate = [OCMockObject mockForProtocol:@protocol(BSGeolLocationDelegate)];
-
+    
     
     // other
     locationCoordinates = CLLocationCoordinate2DMake(69, 70);
+    point = CGPointMake(55, 55);
     coordinateRegion = MKCoordinateRegionMake(locationCoordinates, MKCoordinateSpanMake(0.008f, 0.008f));
     array = @[@"one"];
     _latitudeValueLabel = [[UILabel alloc] init];
@@ -138,7 +145,22 @@ id<LatLonPropertiesDelegate> viewOfLatAndLonProperties;
 }
 
 -(void) testSetLatAndLong{
-    [BSStoreBirdInformation addObjectsToUserDefault:[[NSDictionary alloc] initWithObjectsAndKeys:, nil]
+    [BSStoreBirdInformation addObjectsToUserDefault:[[NSDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithFloat:25], @"latitude", [NSNumber numberWithFloat:52], @"longitude", nil]];
+    [geoLocationService setLatAndLon:(UIViewController<LatLonPropertiesDelegate>*)viewOfLatAndLonProperties];
+    XCTAssertTrue([viewOfLatAndLonProperties.latitudeValueLabel.text floatValue] == 25);
+    XCTAssertTrue([viewOfLatAndLonProperties.longitudeValueLabel.text floatValue] == 52);
 }
 
+-(void) testLocatedPositionNoRemove{
+
+    [[[longPressGestureRecognizerMock expect] andReturnStruct:&point objCType:@encode(CGPoint)] locationInView:mapMock];
+    [[[mapMock expect] andReturnStruct:&locationCoordinates objCType:@encode(CLLocationCoordinate2D)] convertPoint:point toCoordinateFromView:mapMock];
+    [[mapMock expect] addAnnotation:[OCMArg any]];
+    MKPointAnnotation* annotation = [geoLocationService locatedPosition:longPressGestureRecognizerMock map:mapMock removeAnnotations:FALSE];
+    [longPressGestureRecognizerMock verify];
+    [mapMock verify];
+    XCTAssertTrue(annotation.coordinate.latitude == locationCoordinates.latitude, @"Latitude is the same");
+    XCTAssertTrue(annotation.coordinate.longitude == locationCoordinates.longitude, @"Latitude is the same");
+    
+}
 @end

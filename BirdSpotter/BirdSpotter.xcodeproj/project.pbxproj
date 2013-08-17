@@ -824,6 +824,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -869,6 +871,8 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -967,6 +971,11 @@
 					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests,
 					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests/usr/lib,
 				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/BirdSpotterTests/usr/lib/libOCMock.a",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -996,6 +1005,11 @@
 					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests,
 					/Users/bstewart/Documents/iOS_dev/BirdSpotter/BirdSpotter/BirdSpotterTests/usr/lib,
 				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/BirdSpotterTests/usr/lib/libOCMock.a",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1012,6 +1026,7 @@
 				B048731617BD3385003672AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0E8DB5F17970462008CF87B /* Build configuration list for PBXProject "BirdSpotter" */ = {
 			isa = XCConfigurationList;
