@@ -20,7 +20,7 @@
 #import "UIViewController+LatLonPropertiesDelegate.h"
 
 
-@interface BSGeoLocationService : NSObject <CLLocationManagerDelegate> {
+@interface BSGeoLocationService : NSObject <CLLocationManagerDelegate, BSGeolLocationDelegate> {
     CLLocationManager* locationManager;
     
 }

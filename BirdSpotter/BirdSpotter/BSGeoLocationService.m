@@ -34,7 +34,11 @@ static BSGeoLocationService* _me;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    [_me.delegate locationUpdate:[locations lastObject]];
+    CLLocation* location = [locations lastObject];
+    [_me.delegate locationUpdate:location];
+    
+}
+-(void)locationUpdate:(CLLocation *)location{
     
 }
 
@@ -112,8 +116,8 @@ static BSGeoLocationService* _me;
     if(_me){
         _me.locationManager = [[CLLocationManager alloc] init];
         _me.locationManager.delegate = _me; // send loc updates to
-        _me.delegate = self;
-        //        [_me locationManager:_me.locationManager didUpdateLocations:_me.locationManager.location];
+        _me.delegate = _me;
+       //         [_me locationManager:_me.locationManager didUpdateLocations:_me.locationManager.location];
         view.latitudeValueLabel.text = [NSString stringWithFormat:@"%f",_me.locationManager.location.coordinate.latitude];
         view.longitudeValueLabel.text = [NSString stringWithFormat:@"%f",_me.locationManager.location.coordinate.longitude];
     }

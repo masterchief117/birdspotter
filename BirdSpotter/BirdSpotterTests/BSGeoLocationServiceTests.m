@@ -160,7 +160,7 @@ id<LatLonPropertiesDelegate> viewOfLatAndLonProperties;
     [longPressGestureRecognizerMock verify];
     [mapMock verify];
     XCTAssertTrue(annotation.coordinate.latitude == locationCoordinates.latitude, @"Latitude is the same");
-    XCTAssertTrue(annotation.coordinate.longitude == locationCoordinates.longitude, @"Latitude is the same");
+    XCTAssertTrue(annotation.coordinate.longitude == locationCoordinates.longitude  , @"Latitude is the same");
     
 }
 @end

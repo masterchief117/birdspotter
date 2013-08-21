@@ -141,7 +141,7 @@ static bool usedMap = FALSE;
     self.latitudeValueLabel.text = [[NSMutableString alloc] initWithFormat: @"%f" , location.coordinate.latitude] ;
     self.longitudeValueLabel.text = [[NSMutableString alloc] initWithFormat: @"%f" , location.coordinate.longitude] ;
 }
-
+    
 - (void)locationError:(NSError *)error {
     self.latitudeValueLabel.text = [error description];
     self.latitudeValueLabel.text = [error description];
@@ -217,6 +217,8 @@ static bool usedMap = FALSE;
     BSBird* bird = (BSBird*)[[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
     
     NSError* error;
+    
+    [BSActivityUtility setActivity:@"None"];
     
     [bird setName:self.nameTextField.text];
     [bird setNotes: self.locationOfRecording.text];
@@ -311,7 +313,7 @@ static bool usedMap = FALSE;
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     
     picker.delegate = self;
-    picker.allowsEditing = YES;
+    picker.allowsEditing = NO;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
     [self presentViewController:picker animated:YES completion:NULL];
@@ -339,6 +341,8 @@ static bool usedMap = FALSE;
     imageLocation = filePath;
     [data writeToFile:filePath atomically:YES];
     [BSStoreBirdInformation addObjectsToUserDefault:[[NSDictionary alloc] initWithObjectsAndKeys:filePath, @"birdImage", nil]];
+    
+    // If wanting to save image in the libraries. Probably a secondary command to issue!
     
 //    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
 //    // Request to save the image to camera roll
