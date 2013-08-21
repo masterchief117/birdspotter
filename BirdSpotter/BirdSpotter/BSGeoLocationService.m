@@ -41,6 +41,9 @@ static BSGeoLocationService* _me;
 -(void)locationUpdate:(CLLocation *)location{
     
 }
+-(void)locationError:(NSError *)error{
+    
+}
 
 - (void)locationManager:(CLLocationManager *) manager
        didFailWithError:(NSError *)error
@@ -107,8 +110,6 @@ static BSGeoLocationService* _me;
         view.longitudeValueLabel.text = [NSString stringWithFormat:@"%@",lon];
     }
 }
-
-
 
 // setter injection
 - (id)initWithDelegateId:(UIViewController<LatLonPropertiesDelegate>*) view{

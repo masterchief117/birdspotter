@@ -25,9 +25,17 @@ int count = 0;
 {
     [super viewDidLoad];
     [self becomeFirstResponder];
-    [self.foundNewBird setTitle:[NSString stringWithFormat:NSLocalizedString(@"Found Bird", nil)] forState:UIControlStateNormal];
+    [_foundNewBird setTitle:[NSString stringWithFormat:NSLocalizedString(@"Found Bird", nil)] forState:UIControlStateNormal];
     [BSGeoLocationService initialize];
+    [self initService];
     
+}
+
+-(void) initService{
+    if(_initializeUtility == nil){
+        _initializeUtility = [[BSInitializeUtility alloc] init];
+    }
+    [_initializeUtility initService:[BSGeoLocationService class]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +47,7 @@ int count = 0;
 
 -(void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (event.subtype == UIEventSubtypeMotionShake) {
+        
         UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(40, 40, 30, 200)];
         button.backgroundColor = [UIColor blackColor];
         [button setTitle:@"Top Secrets!" forState:UIControlStateNormal];
@@ -59,7 +68,8 @@ int count = 0;
                      animations:^{
                          self.foundNewBird.alpha = alpha;
                      }
-                     completion:^(BOOL finished) {
+                     completion:^(BOOL finished)
+    {
                          alpha = alpha == 0 ? 1 : 0;
                      }];
 }

@@ -18,6 +18,7 @@
 		B023035417B2DED70083FC24 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B023035317B2DED70083FC24 /* Bird.m */; };
 		B02B332A1799F56C00E0E3D6 /* BSActivityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02B33291799F56C00E0E3D6 /* BSActivityPickerViewController.m */; };
 		B036074117A6CA7B00AE0C16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B036074017A6CA7B00AE0C16 /* AudioToolbox.framework */; };
+		B042967717C574F300411354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B042967617C574F300411354 /* Main.storyboard */; };
 		B048730717BD3385003672AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB8617970462008CF87B /* XCTest.framework */; };
 		B048730817BD3385003672AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6717970462008CF87B /* Foundation.framework */; };
 		B048730917BD3385003672AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E8DB6B17970462008CF87B /* UIKit.framework */; };
@@ -39,6 +40,9 @@
 		B0832E581797446A00004B8E /* Bird.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0832E561797446A00004B8E /* Bird.xcdatamodeld */; };
 		B0832E5E17974ECA00004B8E /* BSBird.m in Sources */ = {isa = PBXBuildFile; fileRef = B0832E5D17974ECA00004B8E /* BSBird.m */; };
 		B08CD4E617A1ABA800BED320 /* BSNameSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CD4E517A1ABA800BED320 /* BSNameSelectViewController.m */; };
+		B09236F517C5229700097ADA /* BSDateServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B09236F417C5229700097ADA /* BSDateServiceTests.m */; };
+		B09236F917C543DE00097ADA /* BSViewMainMenuControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B09236F817C543DE00097ADA /* BSViewMainMenuControllerTests.m */; };
+		B09236FC17C54DE900097ADA /* BSInitializeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B09236FB17C54DE900097ADA /* BSInitializeUtility.m */; };
 		B092981F17A96C1F00DE8844 /* hawk.aif in Resources */ = {isa = PBXBuildFile; fileRef = B092981E17A96C1F00DE8844 /* hawk.aif */; };
 		B09A1AB717A1AD9E00132BF6 /* BSSubmissionService.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A1AB617A1AD9E00132BF6 /* BSSubmissionService.m */; };
 		B09A1ABA17A1BF0000132BF6 /* BSDateService.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A1AB917A1BF0000132BF6 /* BSDateService.m */; };
@@ -106,7 +110,7 @@
 		B02B33291799F56C00E0E3D6 /* BSActivityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSActivityPickerViewController.m; sourceTree = "<group>"; };
 		B036074017A6CA7B00AE0C16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B036074217A6CA7B00AE0C16 /* BirdSpotter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BirdSpotter.entitlements; sourceTree = "<group>"; };
-		B036074417A6D2C400AE0C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BirdSpotter/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B042967617C574F300411354 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B048730617BD3385003672AB /* BirdSpotter Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BirdSpotter Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B048731817BD33AB003672AB /* BSStoreInformationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoreInformationTest.m; sourceTree = "<group>"; };
 		B048731A17BD49E3003672AB /* BSProfileViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileViewTests.m; sourceTree = "<group>"; };
@@ -137,6 +141,10 @@
 		B0832E5D17974ECA00004B8E /* BSBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBird.m; sourceTree = "<group>"; };
 		B08CD4E417A1ABA800BED320 /* BSNameSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNameSelectViewController.h; sourceTree = "<group>"; };
 		B08CD4E517A1ABA800BED320 /* BSNameSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNameSelectViewController.m; sourceTree = "<group>"; };
+		B09236F417C5229700097ADA /* BSDateServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDateServiceTests.m; sourceTree = "<group>"; };
+		B09236F817C543DE00097ADA /* BSViewMainMenuControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSViewMainMenuControllerTests.m; sourceTree = "<group>"; };
+		B09236FA17C54DE900097ADA /* BSInitializeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSInitializeUtility.h; sourceTree = "<group>"; };
+		B09236FB17C54DE900097ADA /* BSInitializeUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSInitializeUtility.m; sourceTree = "<group>"; };
 		B092981E17A96C1F00DE8844 /* hawk.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = hawk.aif; sourceTree = "<group>"; };
 		B0942F0017BD2B81003B4AE8 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "../../../../Desktop/OCMockito-0.23/OCHamcrest-1.9/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
 		B094E1B817BD294300C31F51 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = "../../../../Desktop/OCMockito-0.23/OCMockitoIOS.framework"; sourceTree = "<group>"; };
@@ -177,8 +185,6 @@
 		B0E8DB8617970462008CF87B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B0E8DB8E17970462008CF87B /* BirdSpotterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdSpotterTests-Info.plist"; sourceTree = "<group>"; };
 		B0E8DB9217970462008CF87B /* BirdSpotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdSpotterTests.m; sourceTree = "<group>"; };
-		B0F446FC17A81DD40019A98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
-		B0F446FE17A81DD40019A98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		B0F83ED917A033BE0055BB75 /* BSActivityUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSActivityUtility.h; sourceTree = "<group>"; };
 		B0F83EDA17A033BE0055BB75 /* BSActivityUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSActivityUtility.m; sourceTree = "<group>"; };
 		B0FD90671799B1D9001B4510 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -447,10 +453,10 @@
 		B0E8DB6D17970462008CF87B /* BirdSpotter */ = {
 			isa = PBXGroup;
 			children = (
+				B042967617C574F300411354 /* Main.storyboard */,
 				B0B3C4FD17BAC35D0059BB3F /* Views */,
 				B0B9B50C17BA8FAB00DEB08B /* Xibs */,
 				B0F446F817A81DD40019A98B /* Base.lproj */,
-				B036074317A6D2C400AE0C16 /* Main.storyboard */,
 				B036074217A6CA7B00AE0C16 /* BirdSpotter.entitlements */,
 				B00E091B17A0743500FA2F2E /* Resources */,
 				B0F83ED817A0336B0055BB75 /* Utilities */,
@@ -483,6 +489,8 @@
 		B0E8DB8C17970462008CF87B /* BirdSpotterTests */ = {
 			isa = PBXGroup;
 			children = (
+				B09236F817C543DE00097ADA /* BSViewMainMenuControllerTests.m */,
+				B09236F417C5229700097ADA /* BSDateServiceTests.m */,
 				B048732217BD71B1003672AB /* ocmock */,
 				B048731E17BD4DCB003672AB /* BSGeoLocationServiceTests.m */,
 				B048731C17BD4B6C003672AB /* BSActivityUtilityTests.m */,
@@ -505,8 +513,6 @@
 		B0F446F817A81DD40019A98B /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				B0F446F917A81DD40019A98B /* Localizable.strings */,
-				B0F446FD17A81DD40019A98B /* Main.storyboard */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
@@ -518,6 +524,8 @@
 				B0F83EDA17A033BE0055BB75 /* BSActivityUtility.m */,
 				B053BD7917A0628200683D4D /* BSStoreBirdInformation.h */,
 				B053BD7A17A0628200683D4D /* BSStoreBirdInformation.m */,
+				B09236FA17C54DE900097ADA /* BSInitializeUtility.h */,
+				B09236FB17C54DE900097ADA /* BSInitializeUtility.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -645,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B042967717C574F300411354 /* Main.storyboard in Resources */,
 				B0E8DB8017970462008CF87B /* Images.xcassets in Resources */,
 				B092981F17A96C1F00DE8844 /* hawk.aif in Resources */,
 				B0AD3BF617A71A630012E65D /* Crapola.aiff in Resources */,
@@ -682,6 +691,7 @@
 				B0B456FA17A2D00F002944E5 /* UITextField+TextValidation.m in Sources */,
 				B0832E4B1797224400004B8E /* BSBirdSubmissionViewController.m in Sources */,
 				B02B332A1799F56C00E0E3D6 /* BSActivityPickerViewController.m in Sources */,
+				B09236FC17C54DE900097ADA /* BSInitializeUtility.m in Sources */,
 				B0E8DB7E17970462008CF87B /* BSViewMainMenuController.m in Sources */,
 				B0F83EDB17A033BE0055BB75 /* BSActivityUtility.m in Sources */,
 				B09A1ABA17A1BF0000132BF6 /* BSDateService.m in Sources */,
@@ -714,6 +724,8 @@
 				B048731D17BD4B6C003672AB /* BSActivityUtilityTests.m in Sources */,
 				B048732F17BD76E0003672AB /* OCMockRecorder+ExtraMethods.m in Sources */,
 				B0E8DB9317970462008CF87B /* BirdSpotterTests.m in Sources */,
+				B09236F917C543DE00097ADA /* BSViewMainMenuControllerTests.m in Sources */,
+				B09236F517C5229700097ADA /* BSDateServiceTests.m in Sources */,
 				B048731B17BD49E3003672AB /* BSProfileViewTests.m in Sources */,
 				B048731F17BD4DCB003672AB /* BSGeoLocationServiceTests.m in Sources */,
 				B048731917BD33AB003672AB /* BSStoreInformationTest.m in Sources */,
@@ -734,34 +746,6 @@
 			targetProxy = B0E8DB8A17970462008CF87B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B036074317A6D2C400AE0C16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B036074417A6D2C400AE0C16 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		B0F446F917A81DD40019A98B /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0F446FC17A81DD40019A98B /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		B0F446FD17A81DD40019A98B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0F446FE17A81DD40019A98B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B048731517BD3385003672AB /* Debug */ = {

@@ -11,12 +11,8 @@
 #import <XCTest/XCTest.h>
 #import "BSGeoLocationService.h"
 #import <MapKit/MapKit.h>
+#import <OCMock/OCMock.h>
 
-#import "OCMock.h"
-#import "OCMockObject.h"
-#import "OCMArg.h"
-#import "OCMConstraint.h"
-#import "OCMockRecorder.h"
 #import "OCMockRecorder+ExtraMethods.h"
 #import "UIViewController+LatLonPropertiesDelegate.h"
 

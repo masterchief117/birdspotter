@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "BSGeoLocationService.h"
 #import "BSScrollAllBirdsViewController.h"
+#import "BSInitializeUtility.h"
 
 @interface BSViewMainMenuController : UIViewController<FBLoginViewDelegate, AVAudioRecorderDelegate>
 
@@ -20,5 +21,6 @@
 - (IBAction)secretMovement:(UITapGestureRecognizer *)sender;
 - (IBAction)makeSound:(UITapGestureRecognizer *)sender;
 - (IBAction)viewAllBirdsFound:(UIButton *)sender;
+@property(strong, nonatomic) BSInitializeUtility* initializeUtility;
 
 @end
